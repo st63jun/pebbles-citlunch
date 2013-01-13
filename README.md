@@ -1,7 +1,7 @@
 # citlunch - CIT lunch menu API wrapper for Ruby
 
 Gets menus of Chiba Institute of Technology's student cafeteria from
-CIT Lunch API.
+the CIT Lunch API.
 
 See https://udon.upsilo.net/citlunch/ for more API doumentation.
 
@@ -15,7 +15,7 @@ See https://udon.upsilo.net/citlunch/ for more API doumentation.
       puts menu.details
     end
 
-    CITLunch.get(:tsuda_dining, Date.today + 1) # => get tommorow's menu
+    CITLunch.get(:tsuda_dining, Date.today - 1) # => get yesterday's menu
 
 ## How to install
     $ gem install citlunch
