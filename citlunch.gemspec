@@ -4,12 +4,12 @@ require "citlunch/version"
 
 Gem::Specification.new do |s|
   s.name        = "citlunch"
-  s.version     = Citlunch::VERSION
+  s.version     = CITLunch::VERSION
   s.authors     = ["SAITO Jun"]
   s.email       = ["jsaito@xopowo.info"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = "https://github.com/st63jun/citlunch"
+  s.summary     = %q{Wrapper library for lunch menu API of CIT cafeteria}
+  s.description = %q{Gets menus of Chiba Institute of Technology's student cafeteria from CIT Lunch API (https://udon.upsilo.net/citlunch/)}
 
   s.rubyforge_project = "citlunch"
 
