@@ -12,11 +12,11 @@ module CITLunch
       get(place, Date.today)
     end
 
-    def get(name, date)
+    def get(place, date)
       url = "#{API_ENDPOINT}/#{place}/#{date.strftime("%Y-%m-%d")}/menu.json"
       begin
         open(url) {|f| JSON.parse(f.read).map {|r| Menu.new(r)}}
-      rescue
+      rescue OpenURI::HTTPError
         nil
       end
     end
