@@ -1,6 +1,6 @@
-require "citlunch/version"
-require "citlunch/client"
-require "citlunch/menu"
+require "pebbles/citlunch/version"
+require "pebbles/citlunch/client"
+require "pebbles/citlunch/menu"
 
 module CITLunch
   class << self

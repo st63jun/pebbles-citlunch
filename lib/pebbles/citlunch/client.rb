@@ -1,7 +1,7 @@
 require 'date'
 require 'open-uri'
 require 'json'
-require 'citlunch/menu'
+require 'pebbles/citlunch/menu'
 
 module CITLunch
   class Client
