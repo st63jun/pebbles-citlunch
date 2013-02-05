@@ -1,1 +1,1 @@
-require 'citlunch'
+require 'pebbles/citlunch'
