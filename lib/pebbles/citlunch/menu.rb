@@ -5,8 +5,7 @@ module CITLunch
     def initialize(record)
       @price = record["price"]
       @name = record["name"]
-      @details = record["details"]
+      @details = record["details"].map {|s| s.gsub("&amp;", "&")}
     end
-
   end
 end
