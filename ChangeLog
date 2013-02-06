@@ -1,0 +1,12 @@
+2013-02-06  Jun SAITO  <jsaito@xopowo.info>
+
+	* CHANGE Version 0.0.2
+	* CHANGE Menu class properties now replace ``&amp;'' to ``&''.
+
+2013-02-06  Jun SAITO  <jsaito@xopowo.info>
+
+	* CHANGE Move to pebbles namespace. citlunch gem is now called pebbles-citlunch.
+
+2013-01-12  Jun SAITO  <jsaito@xopowo.info>
+
+	* CHANGE Version 0.0.1
