@@ -17,10 +17,12 @@ module CITLunch
       raise ArgumentError.new ("unknown place: #{place}") unless PLACES.include? place
       url = "#{API_ENDPOINT}/#{place}/#{date.strftime("%Y-%m-%d")}/menu.json"
       begin
-        open(url) {|f| JSON.parse(f.read).map {|r| Menu.new(r)}}
+        json = open(url).read
+        JSON.parse(json).map {|r| Menu.new(r)}
       rescue OpenURI::HTTPError
         nil
       end
     end
+
   end
 end
