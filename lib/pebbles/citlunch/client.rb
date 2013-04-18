@@ -7,7 +7,7 @@ module CITLunch
   class Client
 
     API_ENDPOINT = "https://udon.upsilo.net/citlunch/api"
-    PLACES = [:tsuda_dining, :shiba_dining, :shiba_kissa]
+    PLACES = [:tsuda_dining, :shiba_dining, :shiba_kissa, :snara_dining, :snara_kissa]
 
     def get_today(place)
       get(place, Date.today)
